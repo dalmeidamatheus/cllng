@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 241, 245, 249;
+  --background-start-rgb: 2, 6, 23;
+  --background-end-rgb: 2, 6, 23;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 2, 6, 23;
+    --background-end-rgb: 2, 6, 23;
+  }
+}
+
+body {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      #8498f0d3
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.btn {
+  background-color: rgb(0, 31, 168);
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transform-origin: center;
+}
+
+.btn:hover {
+  background-color: #003cff;
+  transform: scale(1.09);
+}
+
+#container {
+  width: 80%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+#textocontainer{
+  color: black;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  scroll-behavior: smooth; 
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  margin-right: 10px; 
+  background-color: #fff;
+}
+
+#textocard{
+  color: black;
+}
+
+.titulo {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  border-bottom: 4px solid #f8d63e;
+}
+
+#cardimage1{
+  max-width: 60%;
+}
